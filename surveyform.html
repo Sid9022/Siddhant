@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="surveyform.css">
+</head>
+<body class="background">
+    <div class="form"><form action="thank.html"><fieldset>
+        <legend style="font-size: x-large; font-style: oblique;" align="center">Survey Form</legend>
+        <div class="content"><label for="name" class="name">NAME:</label>
+        <input type="text" id="name" placeholder="Enter your name" class="box" required><br><br>
+        <label for="email">EMAIL:</label>
+        <input type="text" id="email" placeholder="abc@gmail.com" class="box" required><br><br>
+        <label for="password">PASSWORD:</label>
+        <input type="password" id="password" placeholder="Enter password" class="box" required><br><br>
+        <label for="age">AGE:</label>
+        <input type="number" placeholder="Age" class="box" required><br><br>
+        <label for="role">Which option describe your best role?</label>
+        <select id="role" class="box">
+            <option value="Student">Student</option>
+            <option value="SDE">SDE</option>
+            <option value="Teacher">Teacher</option>
+        </select><br><br>
+        <label for="recommend">How likely is that you would recommend this course to your friend?<br>
+        <input type="radio" name="recommend">Definetely
+        <input type="radio" name="recommend">May be
+        <input type="radio" name="recommend">Not sure</label><br><br>
+        <label for="course">What do you like most in this course:</label>
+            <input type="text" id="course" list="course-lists" placeholder="Select" class="box" required>
+            <datalist id="course-lists">
+                <option value="Front-end Projects">
+                <option value="Back-end Projects">
+                <option value="Data Visualization">
+            </datalist><br><br>
+        <label for="suggestion">Things should be improved in the future(check all that apply)<br>
+        <input type="checkbox">Front-end Projects
+        <input type="checkbox">Back-end Projects
+        <input type="checkbox">Data Visualization
+    </label><br><br>
+    <center><button type="submit" class="button">SUMBIT</button>
+    <button type="reset" class="button">RESET</button></center></div>
+
+
+
+    </form></fieldset></div>
+</body>
+</html>
